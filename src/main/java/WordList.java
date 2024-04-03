@@ -13,8 +13,7 @@ public class WordList
     /* to be implemented in part (a) */
     int x = 0;
     for(int i = 0; i < myList.size();i++){
-        String s = new String (myList.get(i));
-        if(s.length()==len)
+        if(((String)myList.get(i)).length()==len)
             x++;
     }
     return x;
@@ -24,8 +23,7 @@ public class WordList
   {
     /* to be implemented in part (b) */
     for(int i = 0; i < myList.size();i++){
-        String s = new String (myList.get(i));
-        if(s.length()==len){
+        if(((String)myList.get(i)).length()==len){
             myList.remove(i);
             i--;
         }
